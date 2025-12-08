@@ -29,7 +29,7 @@ jobs:
           echo "::set-output name=changes::$c"
       - name: Create PR
         if: ${{ steps.bumpKubAdmConsts.outputs.changes != '' }}
-        uses: peter-evans/create-pull-request@d6d5519d05f5814158ef015b8448f2f74648c421 # v3
+        uses: peter-evans/create-pull-request@22a9089034f40e5a961c8808d113e2c98fb63676 # v3
         with:
           token: ${{ secrets.MINIKUBE_BOT_PAT }}
           commit-message: update image constants for kubeadm images
