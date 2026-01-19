@@ -22,7 +22,7 @@ jobs:
         path: ./image-syncer
 
     - name: Set up Go
-      uses: actions/setup-go@f6164bd8c8acb4a71fb2791a8b6c4024ff038dab # v2
+      uses: actions/setup-go@7a3fe6cf4cb3a834922a1244abfce67bcef6a0c5 # v2
       with:
         go-version: 1.17
 
